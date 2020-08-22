@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/district"
+        android:layout_width="408dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="0dp"
+        android:paddingLeft="20dp"
+        android:text="District List"
+        android:textSize="30sp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/distList"
+        android:layout_below="@+id/textView2"
+        android:layout_margin="10dp">
+    </ListView>
+    <com.leo.simplearcloader.SimpleArcLoader
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/disLoader"
+        app:arc_style="simple_arc"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        ></com.leo.simplearcloader.SimpleArcLoader>
+</RelativeLayout>

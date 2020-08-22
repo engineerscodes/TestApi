@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dgrapy"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+            <ImageView
+                android:id="@+id/dflag"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:layout_weight="1.2"
+                android:src="@drawable/n"
+
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/districtname"
+                        android:text=""
+                        android:gravity="center_vertical"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="5dp"
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_alignParentRight="true"
+                        >
+                    </TextView>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="TOTAL CASES"
+                        android:paddingLeft="0dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/distcases"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="sans-serif-light"
+                        android:text="0"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold"></TextView>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="ACTIVE CASES"
+                        android:paddingLeft="0dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        ></TextView>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/disactive"
+                        android:text="0"
+                        android:textAlignment="textEnd"
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_alignParentRight="true"
+                        >
+                    </TextView>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="RECOVERED "
+                        android:paddingLeft="0dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        ></TextView>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/disRecovered"
+                        android:text="0"
+                        android:textAlignment="textEnd"
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_alignParentRight="true"
+                        >
+                    </TextView>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="DEATH'S"
+                        android:paddingLeft="0dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        ></TextView>
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/disdeaths"
+                        android:text="0"
+                        android:textAlignment="textEnd"
+                        android:textSize="15dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_alignParentRight="true"
+                        >
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -50,7 +50,7 @@ public class MainActivity2 extends AppCompatActivity {
             public void onResponse(String response)
             {
                 try {
-                    /*int count=0;
+                    int count=0;
                     JSONArray jsonArray=new JSONArray(response);
 
                     for(int i=0;i<jsonArray.length();i++)
@@ -66,18 +66,7 @@ public class MainActivity2 extends AppCompatActivity {
                             districtmodelList.add(districtmodels);
                         }
 
-                    }*/
-                    JSONObject jsonObject= new JSONObject(response.toString());
-                    cases.setText(jsonObject.getString("cases"));
-                    recovered.setText(jsonObject.getString("recovered"));
-                    active.setText(jsonObject.getString("active"));
-                    critical.setText(jsonObject.getString("critical"));
-                    todayscase.setText(jsonObject.getString("todayCases"));
-                    todaysdeaths.setText(jsonObject.getString("todayDeaths"));
-                    totaldeaths.setText(jsonObject.getString("deaths"));
-                    tvaffectednations.setText(jsonObject.getString("affectedCountries"));
-                    simpleArcLoaderdis.stop();
-                    simpleArcLoaderdis.setVisibility(View.GONE);
+                    }
 
 
                 } catch (JSONException e) {
